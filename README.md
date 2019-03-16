@@ -1,1 +1,1 @@
-# Microecon.github.io
+# microecon.github.io
