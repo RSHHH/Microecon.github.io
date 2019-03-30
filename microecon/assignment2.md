@@ -9,8 +9,8 @@ adjusted the box office.
 void main()
 {
   film<-read.table("film_box.csv",header=TRUE,sep=",")
-attach(film)
-library(ggplot2)
-film$Time<-factor(film$special,levels=c(0,1),labels=c("ordinary time","special time"))
-ggplot(data=film,aes(x=score,y=lnbox,shape=Time,color=Time))+geom_point()+geom_smooth(method=lm)
+  attach(film)
+  library(ggplot2)
+  film$Time<-factor(film$special,levels=c(0,1),labels=c("ordinary time","special time"))
+  ggplot(data=film,aes(x=score,y=lnbox,shape=Time,color=Time))+geom_point()+geom_smooth(method=lm)
 }
