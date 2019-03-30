@@ -6,11 +6,10 @@ adjusted the box office.
   It is apparently that Chinese films tend to issue on holidays and festivals and we want to know whether issuing movies on special days contribute to box office. First, special days are defined as Spring Festival, May Day, National Day and summer vacation(June to July). Then all movies in the sample are divided into two groups: a group including those films with special schedule and the other one including remainder.
 
 ### Global Regression
-void main()
-{
+```R
   film<-read.table("film_box.csv",header=TRUE,sep=",")
   attach(film)
   library(ggplot2)
   film$Time<-factor(film$special,levels=c(0,1),labels=c("ordinary time","special time"))
   ggplot(data=film,aes(x=score,y=lnbox,shape=Time,color=Time))+geom_point()+geom_smooth(method=lm)
-}
+```
