@@ -58,5 +58,6 @@ legend("topright",col=c("darkblue","blue","darkorange","orange"),lwd=0.5,cex=0.5
 title("Cubic and Natural Cubic regression",xlab="Comment Score",ylab="log box office")    
 ```
 ![Cubic and Natural Cubic Regression](https://github.com/rshhh/rshhh.github.io/blob/master/figure/figure2.png)
+
 Based on cubic regression lines, the advantages of special schedule is much smaller for those movies with extreme quality,but the natural cubic regression lines tell us this advantages doesn't depends on comment scores. Due to the limited observations with extreme low and high scores, even though the natural cubic regression is much stable than the other on,but  I still don't consider that those fitting lines can reliably illustarte the difference of this advantages for different qualities films. 
 There are other essential factors having great influence on box office, such as popularity of actors, types and so on.In order to investigate this problem, I still need other varibles.
