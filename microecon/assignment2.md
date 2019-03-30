@@ -1,5 +1,5 @@
 # Regression: a Analysis Based on Box Office Data in China
-## Rao Sihang  15220162202309
+## Rao Sihang  
 ### Data Introduction and Processing
   In order to investigate the correlation between film quality and economic perfomance, I collected box offices data and comment scores of more than 400 Chinese films released during 2014-2017. Because box offices I collected are nominal data, which are related to inflation. What’s more, the economic revenue of a flim is restricted by the scale of film market.For example, due to the development of movie industry, the box office of a film showed in 2017 must be higher than that of its counterpart with the similar quality and comment. In order to let those data comparable, I
 adjusted the box office.
@@ -18,4 +18,4 @@ adjusted the box office.
  ![figure]()
  
  ### Regression Splines
-    From my perspective, this advantages for films with special schedule might depend on the film quality.
+ From my perspective, this advantages for films with special schedule might depend on the film quality.For extremely terrible or extremely great movies, the impact of sechdule tend to be smaller, but for films with modest comments, this influence tends to be more significant. Based on this hypothesis, I think it is necessary to do a spline regression. 
